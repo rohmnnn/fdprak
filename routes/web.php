@@ -29,11 +29,11 @@ Route::get('/datasiswa', function () {
     return view('datasiswa');
 });
 
-// Route::get('/siswa', function () {
-//     return view('siswa', [
-//         'siswas' => ['Andi', 'Budi', 'Citra', 'Anjas Putri']
-//     ]);
-// });
+Route::get('/porich', function () {
+    return view('siswa', [
+        'siswas' => ['Andi', 'Budi', 'Citra', 'Anjas Putri']
+    ]);
+});
 
 Route::get('/siswa', function() {
     return view('siswas', ['nama' => 'Angjas Putri', 'nilai' => 72]);
