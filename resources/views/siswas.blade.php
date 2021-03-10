@@ -9,12 +9,14 @@
 <body>
     <h1>Data Ujian Siswa</h1>
     <hr>
-    <h3>Nama Peserta Ujian : {{$nama}}</h3>
-    <h3>Anda dinyatakan :</h3>
+    <h3>Nama Peserta Ujian : {!!"$nama &commat;for"!!}</h3>
+    <h3>Nilai lo : {{$nilai}}</h3>
+    <h3>Anda dinyatakan :
     @if ($nilai>70)
-    {!!'<b>Lulus</b>'!!}
+    {{'Lulus'}}
     @else
-    {!!'<b>Tidak Lulus</b>'!!}
+    {{'Tidak Lulus'}}
     @endif
+</h3>
 </body>
 </html>

@@ -43,3 +43,15 @@ Route::get('/por', function() {
     return view('por');
 });
 
+Route::get('/home2', function() {
+    return view('home2');
+});
+
+Route::get('home', function () {
+    return view('home');
+})->name('home');                             
+
+Route::get('about', function () {
+    return view('about');
+})->name('about');                             
+
