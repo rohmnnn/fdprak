@@ -10,6 +10,7 @@
     <h1>Data Ujian Siswa</h1>
     <hr>
     <h3>Nama Peserta Ujian : {!!$nama!!}</h3>
+    <h3>Nim  : {!!$nim!!}</h3>
     <h3>Nilai lo : {{$nilai}}</h3>
     <h3>Anda dinyatakan :
     @if ($nilai>70)

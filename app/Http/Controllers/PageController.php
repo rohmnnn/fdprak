@@ -6,7 +6,7 @@ class PageController extends Controller
 {
     public function index()
     {
-        return 'Halaman Index';
+        return 'Halaman ngIndex';
     }
 
     public function lopyou()
@@ -15,6 +15,6 @@ class PageController extends Controller
     }
 
     public function nilai(){
-        return view('siswas', ['nama' => 'Anjas Putri', 'nilai' => 69]);
+        return view('siswas', ['nama' => 'Muhammad Fatkhurrohman','nim' => '19.01.4403', 'nilai' => 69]);
     }
 }
