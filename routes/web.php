@@ -1,6 +1,9 @@
 <?php
 
+namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,9 +38,9 @@ Route::get('/porich', function () {
     ]);
 });
 
-Route::get('/siswa', function() {
-    return view('siswas', ['nama' => 'Angjas Putri', 'nilai' => 72]);
-});
+// Route::get('/siswa', function() {
+//     return view('siswas', ['nama' => 'Angjas Putri', 'nilai' => 72]);
+// });
 
 Route::get('/por', function() {
     return view('por');
@@ -55,3 +58,12 @@ Route::get('about', function () {
     return view('about');
 })->name('about');                             
 
+
+// lalapel 7 route style
+Route::get('page', 'PageController@index'); 
+
+// lalapel 8 route style
+Route::get('lopyou', [PageController::class,'lopyou']); 
+
+
+Route::get('nilai', [PageController::class,'nilai']); 
