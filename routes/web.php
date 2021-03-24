@@ -67,3 +67,9 @@ Route::get('lopyou', [PageController::class,'lopyou']);
 
 
 Route::get('nilai', [PageController::class,'nilai']); 
+
+Route::get('form', 'PendaftaranController@index')->name('form.index'); 
+Route::post('form', 'PendaftaranController@cek')->name('form.cek'); 
+
+Route::get('calc', 'CalcController@index')->name('calc.index'); 
+Route::post('calc', 'CalcController@ah')->name('calc.ah'); 
